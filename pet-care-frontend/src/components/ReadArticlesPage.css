@@ -1,0 +1,28 @@
+.article-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.article-form input,
+.article-form textarea {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.article-form button {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.article-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}

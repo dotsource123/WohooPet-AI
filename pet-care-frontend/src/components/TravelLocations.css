@@ -1,0 +1,70 @@
+.travel-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.travel-input {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.travel-input input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #ff6f61;
+  font-size: 16px;
+}
+
+.travel-input button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.travel-input button:hover {
+  background-color: #ff3d00;
+}
+
+.travel-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.travel-card {
+  background: #fff3f0;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 5px solid #ff6f61;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.travel-card:hover {
+  transform: translateY(-5px);
+  background-color: #ffece7;
+}
