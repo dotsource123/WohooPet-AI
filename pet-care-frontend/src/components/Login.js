@@ -7,7 +7,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
 
-  const navigate = useNavigate(); // ✅ initialize navigate
+  const navigate = useNavigate(); //  initialize navigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
