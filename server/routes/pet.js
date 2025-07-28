@@ -4,7 +4,7 @@ import verifyToken from "../middleware/auth.js";
 
 const router = express.Router();
 
-// 🛡 Protected Route: Add pet
+//  Protected Route: Add pet
 router.post("/", verifyToken, async (req, res) => {
   try {
     const petData = {
@@ -20,7 +20,7 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-// 🛡 Protected Route: Get all pets of logged-in user
+//  Protected Route: Get all pets of logged-in user
 router.get("/", verifyToken, async (req, res) => {
   try {
     const pets = await Pet.find({ userId: req.user.id });
@@ -31,7 +31,7 @@ router.get("/", verifyToken, async (req, res) => {
   }
 });
 
-// 🛡 Protected Route: Get pet by ID
+//  Protected Route: Get pet by ID
 router.get("/:id", verifyToken, async (req, res) => {
   try {
     const pet = await Pet.findOne({ _id: req.params.id, userId: req.user.id });
@@ -42,7 +42,7 @@ router.get("/:id", verifyToken, async (req, res) => {
   }
 });
 
-// 🛡 Protected Route: Update pet
+//  Protected Route: Update pet
 router.put("/:id", verifyToken, async (req, res) => {
   try {
     const updatedPet = await Pet.findOneAndUpdate(
@@ -57,7 +57,7 @@ router.put("/:id", verifyToken, async (req, res) => {
   }
 });
 
-// 🛡 Protected Route: Delete pet
+//  Protected Route: Delete pet
 router.delete("/:id", verifyToken, async (req, res) => {
   try {
     const deletedPet = await Pet.findOneAndDelete({
